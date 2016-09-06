@@ -1,0 +1,296 @@
+body {
+	margin:0px;
+	font-family: 'Heebo', sans-serif;
+}
+
+#page1 h1 {
+	text-align: center;
+}
+#page1 .the-button {    
+    position: relative;
+    width: 100%;
+    height: 100%;    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    -webkit-box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .25em .3em rgba(255,255,255,.3),
+        inset 0 -.25em .3em rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .25em .3em rgba(255,255,255,.3),
+        inset 0 -.25em .3em rgba(0,0,0,.5);
+    box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .25em .3em rgba(255,255,255,.3),
+        inset 0 -.25em .3em rgba(0,0,0,.5);        
+    font: inherit;
+    cursor: pointer;
+}
+
+#page1 .the-button:before {
+    content: " ";
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;    
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.14) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.14)), color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#page1 .the-button:active {
+    -webkit-box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .1em .3em rgba(0,0,0,.5),
+        inset 0 -.1em .3em rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .1em .3em rgba(0,0,0,.5),
+        inset 0 -.1em .3em rgba(0,0,0,.5);
+    box-shadow: 0 0 .5em rgba(0,0,0,1),
+        inset 0 .1em .3em rgba(0,0,0,.5),
+        inset 0 -.1em .3em rgba(0,0,0,.5);
+}
+
+#page1 .the-button:active:before {
+    top: 11.5%;
+}
+
+#page1 .button-frame {
+    top: 50%;
+    position: relative;
+    z-index: 20;
+    margin: -3.4em auto 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 6.8em;
+    height: 6.8em;
+    padding: .55em;
+    background: #cc0000;
+    display: block;
+}
+
+#page1 .plastic {
+    background: #b01e1e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b01e1e 0%, #920f0f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b01e1e), color-stop(100%,#920f0f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #b01e1e 0%,#920f0f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #b01e1e 0%,#920f0f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #b01e1e 0%,#920f0f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #b01e1e 0%,#920f0f 100%); /* W3C */
+}
+
+#page1 .button-frame.plastic {
+	margin-top: 20px;
+}
+
+#page2 {
+	display: none;
+}
+
+@keyframes horse {
+  0%   { opacity: 0; left:0%; top:0%;}
+  100% { opacity: 1; left:20%;}
+}
+
+@keyframes horse2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#page2 img.rawr {
+	animation: horse 3s;
+	animation-fill-mode: forwards;
+	max-width: 100%;
+	position: relative;
+}
+
+#page2 img.door {
+	max-width: 100%;
+	cursor:pointer;
+}
+
+
+#page2 h2 {
+	font-family: 'Oleo Script', cursive;
+	color: #4d240a;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#page2 h5 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 90px;
+}
+
+#page2 #container {
+	width:100%;
+	height:500px;
+}
+
+#page2 #rawr {
+	width:75%;
+	height:500px;
+	float:left;
+	overflow: hidden;
+
+}
+
+#page2 #door{
+	width:25%;
+	height:500px;
+	float:left;
+}
+
+.mes3 {
+	display:none;
+}
+
+.undermes {
+	display:none;
+}
+
+
+@keyframes zuce {
+  from {
+
+    top:10%;
+    right:18%;
+  }
+  to {
+  
+    top:30%;
+  }
+}
+
+img.guest{
+    position: absolute;
+    max-width: 200px;
+    right:40%;
+    display: none;
+   
+}
+
+img.zuce{
+     animation: zuce 3s infinite;
+}
+
+@keyframes ray1 {
+  from {
+    transform: rotate(0deg);
+    top:60%;
+
+  }
+  to {
+    transform: rotate(360deg);
+    top:50%;
+  }
+}
+
+img.ray1{
+    animation: ray1 1s infinite;
+    width:1%;
+}
+
+@keyframes ray2 {
+  from {
+    transform: rotate(0deg);
+    
+    left:40%;
+
+  }
+  to {
+    transform: rotate(360deg);
+   
+    left:40%;
+  }
+}
+
+
+img.ray2{
+    animation: ray2 1s infinite;
+
+}
+img.ray3{
+     animation: ray3 20s infinite;
+
+}
+
+@keyframes ray3 {
+  from {
+    transform: rotate(0deg);
+    
+    left:10%;
+
+  }
+  to {
+    transform: rotate(360deg);
+   
+    left:10%;
+  }
+}
+
+@keyframes cousin {
+  from {
+    bottom:2%;
+    left:1%;
+
+  }
+  to {
+    bottom:2%;
+    left:100%;
+  }
+}
+
+img.cousin{
+    animation: cousin 3s infinite;
+
+}
+
+@keyframes jan {
+  from {
+    top:2%;
+    right:1%;
+
+  }
+  to {
+    top:2%;
+    right:100%;
+  }
+}
+
+img.jan{
+    animation: jan 3s infinite;
+    width:4%;
+
+}
+
+@keyframes lys {
+  from {
+  
+    width:1%;
+
+  }
+  to {
+
+    width:200%;
+  }
+}
+
+img.lys{
+    animation: lys 50s infinite;
+    max-width: 1000px;
+
+}

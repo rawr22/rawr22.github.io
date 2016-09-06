@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Happy birthday :></title>
+<meta name="description" content="rawr is a retard">
+<meta name="author" content="Kuso">
+
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+
+		<div id="page1">
+			
+			<h1 class="wild-ride">Activate Wild Ride</h1>
+			<div class="button-frame plastic">
+	  			<div class="the-button plastic"></div>
+			</div>
+		</div>
+		<div id="page2">
+			
+			<h2 class="invite-guests">Guests are at your door!</h2>
+			<h5 class="door-tip">Click on the door to start the party</h5>
+			<h2 class="mes3">Herzlichen Glückwunsch zum Geburtstag!</h2>
+			<h5 class="undermes">ghehehehehe</h5>
+			<div id="container">			
+				<div id="rawr">
+					<img class="rawr" src="images/rawr22.gif">
+				</div>
+				<div id="door">
+					<img class="door" src="images/door.png">
+					<audio class='zuce' src='song.mp3'></audio>
+				</div>
+			</div>
+			<img class="20" src="images/20.jpg" style="position: absolute; cursor:pointer;">			
+			<img class="zuce guest" src="images/zuce.png">
+			<img class="ray1 guest" src="images/raymond1.png">
+			<img class="ray2 guest" src="images/raymond2.png">
+			<img class="ray3 guest" src="images/raymond3.png">
+			<img class="cousin guest" src="images/cousin.png">
+			<img class="jan guest" src="images/jan.png">
+			<img class="lys guest" src="images/lys.png">
+		</div>
+	
+		
+
+<script type="text/javascript">
+		
+$(".the-button.plastic").click(function() {
+	$("#page1").css("display", "none");
+	$("#page2").css("display", "block");
+	$("body").css("background-color", "#FBEBC8");
+
+});
+
+
+$("img.door").click(function() {
+
+	$('#page2').append('<embed id="embed_player" src="song.mp3" autostart="true" hidden="true"></embed>');
+	$('#page2').append('<embed id="embed_player" src="heckerlied.mp3" autostart="true" hidden="true"></embed>');
+	$('#page2').append('<embed id="embed_player" src="air.mp3" autostart="true" hidden="true"></embed>');
+	$("#door").css("display", "none");
+	$(".invite-guests").css("display", "none");
+	$(".door-tip").css("display", "none");
+	$(".mes3").css("display", "block");
+	$(".undermes").css("display", "block");
+	$("#rawr").css("overflow", "inherit");
+	$("img.rawr").css("animation", "horse2 5s infinite");
+	$("img.guest").css("display", "block");
+	(function() { // Wrap in a function to not pollute the global scope
+
+	  // Colors. These are the color names you can use in CSS. You could use color codes
+	  // like #rrggbb as well.
+	  var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+
+	  var colorIndex = 0;
+	  var textIndex = 1;
+
+	  setInterval(function(){
+	    // Set the color and increment the index.
+	    document.body.style.backgroundColor = colors[colorIndex++];
+	    document.body.style.color = colors[textIndex++];
+
+	    // Wrap the index if it goes past the length of the array. % is modulo.
+	    colorIndex %= colors.length;
+	    textIndex %= colors.length;
+	    }, 150);
+		})();
+
+
+});
+
+
+$("img.20").click(function() {	
+	$('#page2').append('<embed id="embed_player" src="20.mp3" autostart="true" hidden="true"></embed>');
+});
+		</script>
+
+</body>
+</html>
